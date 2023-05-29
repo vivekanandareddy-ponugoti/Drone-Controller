@@ -3,7 +3,15 @@
 ## Project Brief
 The aim of this software project is to develop a mobile application that eliminates the need for a separate remote controller, enabling users to control drones using their smartphones or tablets. The project seeks to revolutionize drone control, making it more accessible, affordable, and user-friendly.
 
-# Functional requirements:
+## Ardupilot Simulator Setup
+1. Clone the ArduPilot repository in the simulator directory and run the ArduPlane SITL simulator:
+`git clone https://github.com/ArduPilot/ardupilot.git`
+`cd ardupilot`
+`git submodule update --init --recursive`
+`cd tools/autotest`
+`python3 sim_vehicle.py -v ArduPlane --console --map --out 127.0.0.1:14550`
+
+## Functional requirements:
 The mobile app will have the following functional requirements:
 
 1. Arming Procedure: Before taking flight, users must complete a pre-flight arming procedure to ensure that all control surfaces and systems are operational.
