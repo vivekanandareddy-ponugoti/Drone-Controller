@@ -3,3 +3,8 @@ pymavlink
 mavproxy
 pexpect
 empy
+
+#Server
+flask
+flask_cors
+dronekit
